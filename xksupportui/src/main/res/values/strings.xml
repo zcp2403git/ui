@@ -1,0 +1,11 @@
+<resources>
+    <string name="wheel_year">年</string>
+    <string name="wheel_month">月</string>
+    <string name="wheel_day">日</string>
+    <string name="wheel_hours">时</string>
+    <string name="wheel_minutes">分</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+
+</resources>

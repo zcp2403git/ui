@@ -1,0 +1,43 @@
+//apply plugin: 'com.android.library'
+//
+//android {
+//    compileSdkVersion 23
+//    buildToolsVersion "23.0.3"
+//
+//    defaultConfig {
+//        minSdkVersion 15
+//        targetSdkVersion 23
+//        versionCode 1
+//        versionName "1.0"
+//
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//
+//    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//}
+//
+//dependencies {
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+//    compile 'com.android.support:appcompat-v7:23.4.0'
+//    testCompile 'junit:junit:4.12'
+//
+//    compile 'com.android.support:recyclerview-v7:23.4.0'
+//}
+//apply from: '../../../xk_android_ycdd_biz/buildsystem/baseLibraryTemplate.gradle'
+apply from: rootProject.ext.tp["baseLibrary"]
+//apply from: './gradle-mvn-push.gradle'
+dependencies {
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["glide"]
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+}

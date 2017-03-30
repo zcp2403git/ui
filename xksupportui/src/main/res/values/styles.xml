@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- 时间选择器popwidnow 显示消失动画 -->
+    <style name="daywheel_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/timepicker_anim_enter_bottom</item> <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/timepicker_anim_exit_bottom</item> <!-- 指定消失的动画xml -->
+    </style>
+
+</resources>

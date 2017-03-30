@@ -1,0 +1,150 @@
+<resources>
+
+    <declare-styleable name="HintIconView">
+        <attr name="edit_imagewidth" format="dimension|reference" />
+        <attr name="edit_imageheight" format="dimension|reference" />
+        <attr name="edit_textColor" format="color" />
+        <attr name="edit_textSize" format="dimension|reference" />
+        <attr name="hint_text" format="string" />
+        <attr name="hint_drawable" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="round_background" format="boolean" />
+        <attr name="is_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <!-- Don't touch this -->
+    <attr name="DayPickerStyle" format="reference" />
+    <declare-styleable name="NumberPicker">
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="MyFlexboxLayout">-->
+        <!--<attr name="flexDirection">-->
+            <!--<enum name="row" value="0" />-->
+            <!--<enum name="row_reverse" value="1" />-->
+            <!--<enum name="column" value="2" />-->
+            <!--<enum name="column_reverse" value="3" />-->
+        <!--</attr>-->
+
+        <!--<attr name="flexWrap">-->
+            <!--<enum name="nowrap" value="0" />-->
+            <!--<enum name="wrap" value="1" />-->
+            <!--<enum name="wrap_reverse" value="2" />-->
+        <!--</attr>-->
+
+        <!--&lt;!&ndash;-->
+            <!--Omitting flex-flow property since it's reflected in the parent flex container.-->
+            <!--Set the flexDirection and/or flexWrap to the parent flex container explicitly if you-->
+            <!--want to use the flex-flow similar way to the web.-->
+         <!--&ndash;&gt;-->
+
+        <!--<attr name="justifyContent">-->
+            <!--<enum name="flex_start" value="0" />-->
+            <!--<enum name="flex_end" value="1" />-->
+            <!--<enum name="center" value="2" />-->
+            <!--<enum name="space_between" value="3" />-->
+            <!--<enum name="space_around" value="4" />-->
+        <!--</attr>-->
+
+        <!--<attr name="alignItems">-->
+            <!--<enum name="flex_start" value="0" />-->
+            <!--<enum name="flex_end" value="1" />-->
+            <!--<enum name="center" value="2" />-->
+            <!--<enum name="baseline" value="3" />-->
+            <!--<enum name="stretch" value="4" />-->
+        <!--</attr>-->
+
+        <!--<attr name="alignContent">-->
+            <!--<enum name="flex_start" value="0" />-->
+            <!--<enum name="flex_end" value="1" />-->
+            <!--<enum name="center" value="2" />-->
+            <!--<enum name="space_between" value="3" />-->
+            <!--<enum name="space_around" value="4" />-->
+            <!--<enum name="stretch" value="5" />-->
+        <!--</attr>-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="MyFlexboxLayout_Layout">-->
+        <!--<attr name="layout_order" format="integer" />-->
+
+        <!--&lt;!&ndash; Negative numbers are invalid. &ndash;&gt;-->
+        <!--<attr name="layout_flexGrow" format="float" />-->
+
+        <!--&lt;!&ndash; Negative numbers are invalid. &ndash;&gt;-->
+        <!--<attr name="layout_flexShrink" format="float" />-->
+
+        <!--&lt;!&ndash;-->
+            <!--The initial length in a percentage format relative to its parent. This is similar to the-->
+            <!--flex-basis property in the original CSS specification.-->
+            <!--(https://www.w3.org/TR/css-flexbox-1/#flex-basis-property)-->
+            <!--But unlike the flex-basis property, this attribute only accepts a value in fraction-->
+            <!--(percentage), whereas flex-basis property accepts width values such as 1em, 10px and-->
+            <!--the 'content' string.-->
+            <!--But specifying initial fixed width values can be done by specifying width values in-->
+            <!--layout_width (or layout_height, varies depending on the flexDirection). Also the same-->
+            <!--effect can be done by specifying "wrap_contnet" in layout_width (or layout_height) if-->
+            <!--developers want to achieve the same effect as 'content'.-->
+            <!--Thus, this attribute only accepts fraction values, which can't be done through-->
+            <!--layout_width (or layout_height) for simplicity.-->
+        <!--&ndash;&gt;-->
+        <!--<attr name="layout_flexBasisPercent" format="fraction" />-->
+
+        <!--&lt;!&ndash;-->
+            <!--Omitting flex property since it's a shorthand for layout_flexGrow and layout_flexShrink-->
+            <!--and layout_percentInParent (flex-basis in the original CSS spec).-->
+        <!--&ndash;&gt;-->
+
+        <!--<attr name="layout_alignSelf">-->
+            <!--<enum name="auto" value="-1" />-->
+            <!--&lt;!&ndash; The values below need to match the values of alignItems &ndash;&gt;-->
+            <!--<enum name="flex_start" value="0" />-->
+            <!--<enum name="flex_end" value="1" />-->
+            <!--<enum name="center" value="2" />-->
+            <!--<enum name="baseline" value="3" />-->
+            <!--<enum name="stretch" value="4" />-->
+        <!--</attr>-->
+
+        <!--<attr name="layout_minWidth" format="dimension" />-->
+        <!--<attr name="layout_minHeight" format="dimension" />-->
+        <!--<attr name="layout_maxWidth" format="dimension" />-->
+        <!--<attr name="layout_maxHeight" format="dimension" />-->
+
+        <!--&lt;!&ndash;-->
+            <!--This attribute forces a flex line wrapping. i.e. if this is set to true for a-->
+            <!--flex item, the item will become the first item of a flex line. (A wrapping happens-->
+            <!--regardless of the flex items being processed in the the previous flex line)-->
+            <!--This attribute is ignored if the flex_wrap attribute is set to nowrap.-->
+            <!--The equivalent attribute isn't defined in the original CSS Flexible Box Module-->
+            <!--specification, but having this attribute is useful for Android developers to flatten-->
+            <!--the layouts when building a grid like layout or for a situation where developers want-->
+            <!--to put a new flex line to make a semantic difference from the previous one, etc.-->
+        <!--&ndash;&gt;-->
+        <!--<attr name="layout_wrapBefore" format="boolean" />-->
+    <!--</declare-styleable>-->
+
+</resources>

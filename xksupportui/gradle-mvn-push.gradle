@@ -1,0 +1,35 @@
+apply plugin: 'maven'
+
+def getReleaseRepositoryUrl() {
+    return "http://192.168.1.128:8081/nexus/content/repositories/releases/"
+}
+
+def getSnapshotRepositoryUrl() {
+    return "http://192.168.1.128:8081/nexus/content/repositories/snapshots"
+}
+
+def getRepositoryUsername() {
+    return 'build'
+}
+
+def getRepositoryPassword() {
+    return 'xiaoka321'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: getReleaseRepositoryUrl()) {
+                authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+            }
+            snapshotRepository(url: getSnapshotRepositoryUrl()) {
+                authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+            }
+            pom.groupId = "com.xiaoka.support"
+            pom.artifactId = "xiaoka-support-ui"
+            pom.version = "0.8.3-SNAPSHOT"
+            pom.name = "xiaoka-support-ui"
+            pom.packaging = 'aar'
+        }
+    }
+}
